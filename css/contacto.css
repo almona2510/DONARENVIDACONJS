@@ -240,7 +240,8 @@ form .horarios input{
     margin: 0 .5em 0 0;
 }
 textarea{
-    width: 100%;
+    max-width: 400px;
+    max-height:260px;
     padding: 1% 2%;
     border-radius: 4px;
     border: 1px solid #F0830E;
