@@ -357,6 +357,10 @@ footer{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .card-ahijado img:hover{
+        transform: scale(1.2);
+    }
+
 }
 
 
