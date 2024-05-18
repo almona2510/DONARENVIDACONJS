@@ -4,7 +4,7 @@ body{
     font-style: normal;
     min-height: 100vh;
     box-sizing: border-box;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 *{
@@ -109,22 +109,23 @@ nav ul li a:hover{
     color: #000;
 }
 
-/****/
-.donacion{
-    background-color: #C21518;
+/*******/
+.inicio{
+    background-color: #FBDD7B;
 }
-.donacion a{
+.inicio a{
     color: #ffffff;
 }
 
 /*Estilos seccion presentacion*/
 .presentacion{
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-right: 10px;
     }
 .presentacion img{
-    width: 100%;
+    width: 1200px;
+   
 }  
 
 /* Estilos seccion actividades */
