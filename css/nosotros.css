@@ -245,6 +245,10 @@ h3{
     transform: scale(1.2);
 }
 
+.imagen-objetivos img:hover{
+    transform: scale(1.2);
+}
+
 /* footer */
 footer{
     background-color: #C21518;
