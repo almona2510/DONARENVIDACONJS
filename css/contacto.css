@@ -215,7 +215,7 @@ form{
     display: grid;
     text-align: left;
 }
-form label, input, select{
+form label, input, select, .Horario{
     font-weight: 600;
 }
 input, select{
@@ -240,8 +240,7 @@ form .horarios input{
     margin: 0 .5em 0 0;
 }
 textarea{
-    max-width: 400px;
-    max-height:260px;
+    width: 100%;
     padding: 1% 2%;
     border-radius: 4px;
     border: 1px solid #F0830E;
@@ -258,16 +257,15 @@ input::placeholder, textarea::placeholder{
 
 .button{
     font-size: 1em;
-    background-color: #ff7119ec;
-    border-color: #f5c25b;
+    border: none;
+    background-color: #FBDD7B;
     font-weight: 600;
-    border-radius: 5px;
     margin-top: 10px;
     cursor: pointer;
-
     padding: 5px;
     width: 100px;
 }
+
 .button:hover{
     border-color: #C21518;
 }
