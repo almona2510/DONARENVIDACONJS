@@ -371,7 +371,13 @@ footer{
    .nav-barra{
     display: flex;
     margin-right: 1em;
-}
+} 
+
+.presentacion img {
+        max-width: 100%;
+    }
+
+    
 .nav-menu{
     flex-direction: column;
     align-items: end;
@@ -449,10 +455,11 @@ footer{
 
 
 @media screen and (max-width: 600px) {
-   
-    .presentacion img {
-        max-width: 100vh;
+    .container:not(header){
+        grid-template-columns: 1fr;
     }
+   
+   
     
 .titulo-actividades{
         margin: 5px;
