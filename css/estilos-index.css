@@ -177,11 +177,13 @@ background-color: rgba(255, 253, 251, 0.253);
 border: none;
 border-radius: 50%;
 cursor: pointer;
+color: white;
 
 }
 
 .sabermas:hover{
     background-color: white;
+    color: black;
 
 }
 
@@ -206,7 +208,6 @@ font-weight: bold;
     text-align: justify;
     border-radius: 5%;
     
-
 }
 
 .actividad2{
@@ -234,7 +235,6 @@ font-weight: bold;
 
 }
 
-
 div>h3{
     text-align: center;
     text-decoration: underline;
@@ -254,8 +254,6 @@ div>p{
 
 }
 
-
-
 /* Estilos seccion novedades */
 .titulo-novedades{
     width: 100%;
@@ -274,6 +272,7 @@ div>p{
 .contenedor-slider{
     width: 100%;
     max-width: 80%;
+    min-height: 300px;
     height: auto;
     margin: 20px auto 0px;
     overflow: hidden;    
@@ -457,9 +456,11 @@ footer{
 @media screen and (max-width: 600px) {
     .container:not(header){
         grid-template-columns: 1fr;
-    }
-   
-   
+    }  
+
+.presentacion img{
+    height: 250px;
+}
     
 .titulo-actividades{
         margin: 5px;
@@ -469,7 +470,7 @@ footer{
 
     .sabermas {
         padding: 15px 15px;
-        font-size: 16px;}
+        font-size: 14px;}
 
     .contenedor-actividades{
         display: flex;
@@ -486,11 +487,11 @@ footer{
     }
 
     .actividad1 h3{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .actividad1 p{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .actividad1, .actividad2, .actividad3{
@@ -501,22 +502,22 @@ footer{
         align-self: center;
     }
     .sabermas{
-        font-size: 16px;
+        font-size: 14px;
     }
     .actividad2 h3{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .actividad2 p{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .actividad3 h3{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .actividad3 p{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .titulo-novedades{
@@ -526,8 +527,26 @@ footer{
     }
     
 }
-    
-    
+
+@media screen and (min-width: 1024px){
+    .actividad3>.contenedor-button{
+        margin-top: 70px;
+    }
+
+    .actividad2>.contenedor-button{
+        margin-top: 45px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .actividad3>.contenedor-button{
+        margin-top: 40px;}
+      
+
+    .actividad2>.contenedor-button{
+        margin-top: 25px;
+    }
+}
 
 
 
