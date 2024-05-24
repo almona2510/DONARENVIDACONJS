@@ -26,20 +26,19 @@ body{
     display: grid;
     grid-template-areas:
     "header"
-    ".hero"
+    ".presentacion"
     "main"
     "footer"
     ;
 }
 
-.container{
+.container:not(.presentacion, main){
     display: grid;
     grid-template-columns: 1fr 1fr; /*divide el contenedor en dos columnas de igual tamaño*/
     
     align-items: center;/*centra verticalmente*/
     justify-content: center;/*centra horizontalmente*/
 }
-
 
 /*header*/
 header{
@@ -145,49 +144,138 @@ nav ul li a:hover{
 }
 /****/
 
-/*main*/
-main{
-    margin-top: 3em;
-    height: 100%;
-}
-
-h3{
-    font-size: 2em;
-    margin-bottom: .5em;
-}
-
-p, .contenido-texto ul{
-    font-size: .8em;
-}
-
-.contenido-video iframe{
-    width: 100%;
-    height: 360px; 
-    
-}
-
-.contenido-texto, .contenido-imagen{
-    height: 100%;
-    width: 100%;
-
+/*presentacion*/
+.presentacion, .actividades, .novedades{
     text-align: center;
+    justify-content: center;
+}
+.presentacion{
+    margin-top: 3em;
+}
+.presentacion img{
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    max-width: 100%;
+}
+h1{
+ opacity: 0;   
+}
+
+/*main*/
+.titulo{
+    margin: 10px;
+    font-size: 2.7em;
+    color: #C21518;
+    text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.5);
+}
+.titulo:hover{
+    transform: scale(1.2, 1.2)  
+}
+
+.contenedor-actividades{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 1.2em;
+}
+
+.actividad{
+    flex: 1;
+    border-radius: 5%;
+    padding: 1em 3em;
+    color: #fff;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+}
+.actividad-fondo1{
+    background-color: #F0830E;
+}
+.actividad-fondo2{
+    background-color: #C21518;
+}
+.actividad-fondo3{
+    background-color: #81B04B;
 }
 
-.contenido-imagen img{
-    max-width: 100%;
+.actividad img{ 
+    width: 25%;
+}
+.actividad h3{
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+.actividad p{
+    font-size: .9em;
+    font-style: italic;
+    padding: 1em 0;
+}
+.sabermas{
+    padding: 20px;
+   
+    font-size: 1em;
+    font-weight: bold;
+    background-color: rgba(255, 253, 251, 0.253);
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 1em 3em;
+}
+.sabermas:hover{
+    background-color: #ffff;
+    color: #000;
+    font-weight: bold;
+}
+
+
+
+/* Estilos seccion novedades */
+.contenedor-slider{
+    width: 100%;
+    max-width: 80%;
     height: auto;
+    margin: 20px auto 0px;
+    overflow: hidden;    
 
 }
-.contenido-texto, .contenido-imagen{
-    padding: 3em;
+
+.contenedor-slider ul{
+    display: flex;
+    padding: 0%;
+    width: 400%;
+    max-width: 800vh;
+    animation: slider 20s infinite ease-in-out;
+
 }
-.contenido-texto p{
-    text-align: justify;
+
+.contenedor-slider li{
+    list-style: none;
+    width: 100%;
+
 }
+
+.contenedor-slider img{
+    width: 100%;
+}
+
+@keyframes slider{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+
+}
+
+
 
 
 /* footer */
@@ -252,6 +340,19 @@ footer{
         display: none;
     }
 
+    /*main*/
+    .titulo{
+        font-size: 2em;
+    }
+    .contenedor-actividades{
+        flex-direction: column;
+    }
+    .actividad p{
+        font-size: 1em;
+    }
+    .actividad img{ 
+        width: 20%;
+    }
 
     /*footer*/
     .rrss{
@@ -273,12 +374,29 @@ footer{
     .container:not(header){
         grid-template-columns: 1fr;
     }
-    .contenido-texto, .contenido-imagen, .contenido-video{
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    
 
+
+
+}
+
+@media screen and (min-width: 1024px){
+    .actividad3>.contenedor-button{
+        margin-top: 70px;
+    }
+
+    .actividad2>.contenedor-button{
+        margin-top: 45px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .actividad3>.contenedor-button{
+        margin-top: 40px;}
+      
+
+    .actividad2>.contenedor-button{
+        margin-top: 25px;
+    }
 }
 
 

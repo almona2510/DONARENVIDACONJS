@@ -322,6 +322,7 @@ footer{
     /*hero*/
     .portada-texto{
         height: auto;
+        padding: 1em 0;
     }
 
 }

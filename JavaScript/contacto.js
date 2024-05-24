@@ -64,6 +64,7 @@ document.getElementById("enviar").addEventListener("click",function(e){
     if (horariosSeleccionados.length === 0) {
         document.getElementById('mensaje-error').style.color= "red";
         document.getElementById("mensaje-error").textContent = "*Ingrese un horario";
+        console.log ("Horario no ingresado")
         return false;
     }
     //Verificar si el campo de Consulta está vacio
@@ -104,7 +105,7 @@ document.getElementById("enviar").addEventListener("click",function(e){
         //Si el campo consulta no está vacío
         console.log("La consulta ingresada: " + inputConsulta);
 
-        document.getElementById("formulario").reset();//Cuando el formulario seenvia se resetea los campos 
+        document.getElementById("formulario").reset();//Cuando el formulario se envia se resetea los campos 
     };
 
 
