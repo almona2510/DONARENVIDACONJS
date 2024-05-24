@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donar en vida-Colaboración</title>
-    <!--Consigan: uso de favicon-->
+    <!--Consigna: uso de favicon-->
     <link rel="icon" href="img/donar-en-vida-isotipo.png">
     <!--css-->
     <link rel="stylesheet" href="css/contacto.css">
@@ -73,6 +73,7 @@
             <img src="img/contacto-2.jpg" alt="contacto">
         </div>
         <!--contactar-->
+        <!--  Consigna formulario de contacto, con al menos 5 campos que incluya (un checkbox o radiobutton), un select y una imagen-->
         <div class="contenido-texto contacto-contenido">
             <a id="enviar-consulta"></a>
             <h3>ENVIANOS TU CONSULTA</h3>
@@ -102,7 +103,7 @@
                     <input type="date" name="nacimiento" id="nacimiento" min="0" max="100">
                      -->
                     <div>
-                        <label for="Medio">Seleccione por que medio prefiere ser contactado:</label>
+                        <label for="Medio">Seleccione por que medio prefiere ser contactado:</label> <!-- Consigna utilizar un select-->
                         <select name="Medio" id="Medio" >
                             <option value="medioEmail">Email</option>
                             <option value="medioTelefono">Teléfono</option>
@@ -110,7 +111,7 @@
                         </select>
                     </div>
                     
-                    <label for="HorarioCheckbox">Horario/s para ser contactado:</label>
+                    <label for="HorarioCheckbox">Horario/s para ser contactado:</label> <!-- Consigna utilizar un checkbox-->
                     <div class="horarios" id="Horario">
                         <p><input type="checkbox" name="Horario" id="manana" value="Mañana"> <label for="manana">Mañana</label></p>
                         <p><input type="checkbox" name="Horario" id="tarde" value="Tarde"><label for="tarde">Tarde</label></p>
@@ -122,7 +123,7 @@
                     <textarea name="Consulta" id="Consulta" cols="30" rows="5" placeholder="Escriba su consulta" ></textarea>
                 
 
-                <!-- <input class="button" type="submit" value="Enviar"> -->
+                <!-- <input class="button" type="submit" value="Enviar"> --> 
                 <button class="button" id="enviar" type="submit"><img src="img/Enviar2.png" alt="enviar-form"></button>
                 <p class="mensaje-error" id="mensaje-error"></p>
                 </form>
@@ -146,7 +147,7 @@
             </div>
             
         </div>
-        <!--google map-->
+        <!--google map--> <!-- Consigna utilizar iframes-->
         <div class="contenido-mapa">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.7704629263244!2d-58.513643924556355!3d-33.00982657508193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa82b7164b951%3A0x1c94bf194683c4ea!2s3%20de%20Febrero%2088%2C%20E2820%20Gualeguaych%C3%BA%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1714803758798!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>

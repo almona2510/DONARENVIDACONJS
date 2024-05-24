@@ -1,6 +1,6 @@
 /*Se importó una fuente tipográfica*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* Consigna: Utilizar fuentes Google Fonts.Es*/
 
 *{
     margin: 0; /*eliminar el margen*/
@@ -315,6 +315,7 @@ footer{
 /*Media Query: Tablet*/
 @media (max-width: 900px){
     /*header*/
+     /*Hasta 900px la barra de navegación se transforma en menú hamburguesa*/
     .nav-barra{
         display: flex;
         margin-right: 1em;

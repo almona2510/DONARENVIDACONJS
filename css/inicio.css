@@ -1,6 +1,6 @@
 /*Se importó una fuente tipográfica*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* Consigna: Utilizar fuentes Google Fonts.Es*/
 
 *{
     margin: 0; /*eliminar el margen*/
@@ -169,7 +169,7 @@ h1{
     text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.5);
 }
 .titulo:hover{
-    transform: scale(1.2, 1.2)  
+    transform: scale(1.2, 1.2)  /*Consigna: Utilizar al menos una animación, transformación o una transición.*/
 }
 
 .contenedor-actividades{
@@ -224,19 +224,17 @@ h1{
     margin: 1em 3em;
 }
 .sabermas:hover{
-    background-color: #ffff;
+    background-color: #ffff; /*Consigna: Utilizar al menos una animación, transformación o una transición.*/
     color: #000;
     font-weight: bold;
 }
 
-
-
-/* Estilos seccion novedades */
+/* Estilos seccion novedades - Slider de imagenes */
 .contenedor-slider{
     width: 100%;
     max-width: 80%;
     height: auto;
-    margin: 20px auto 0px;
+    margin: 20px auto 0px; 
     overflow: hidden;    
 
 }
@@ -246,7 +244,7 @@ h1{
     padding: 0%;
     width: 400%;
     max-width: 800vh;
-    animation: slider 20s infinite ease-in-out;
+    animation: slider 20s infinite ease-in-out; /*Consigna animacion*/
 
 }
 
@@ -260,7 +258,7 @@ h1{
     width: 100%;
 }
 
-@keyframes slider{
+@keyframes slider{ /*Animación por medio de @Keyframes*/
     0% {margin-left: 0%;}
     20% {margin-left: 0%;}
 
@@ -276,9 +274,7 @@ h1{
 }
 
 
-
-
-/* footer */
+/* Estilos footer */
 footer{
     background-color: #C21518;
     padding: 2em 0;
@@ -320,6 +316,7 @@ footer{
 /*Media Query: Tablet*/
 @media (max-width: 900px){
     /*header*/
+    /*Hasta 900px la barra de navegación se transforma en menú hamburguesa*/
     .nav-barra{
         display: flex;
         margin-right: 1em;
@@ -345,12 +342,12 @@ footer{
         font-size: 2em;
     }
     .contenedor-actividades{
-        flex-direction: column;
+        flex-direction: column; /*Se modifica de flex-row a flex-direction column*/
     }
     .actividad p{
-        font-size: 1em;
+        font-size: 1em; /*se modifica tamaño fuente*/
     }
-    .actividad img{ 
+    .actividad img{ /*Se modifica tamaño de las imagenes*/
         width: 20%;
     }
 
@@ -375,11 +372,9 @@ footer{
         grid-template-columns: 1fr;
     }
 
-
-
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px){ /*Se modifica margin de contenedor-button por alturas*/
     .actividad3>.contenedor-button{
         margin-top: 70px;
     }
